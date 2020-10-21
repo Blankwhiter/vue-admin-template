@@ -30,6 +30,10 @@ export default {
         content: '加入定时器配置界面',
         timestamp: '2020-08-14',
         color: '#0bbd87'
+      },{
+        content: '加入视频播放插件',
+        timestamp: '2020-10-21',
+        color: '#55ffff'
       }]
     }
   }

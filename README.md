@@ -57,3 +57,28 @@ npm run dev
 ![修改](./pic/修改.png)
 
 ![预览](./pic/预览.png)
+
+2.视频播放
+使用`vue-video-player`插件
+### 模块安装
+```
+npm install vue-video-player -S
+```
+
+### 文件变动列表
+1.添加文件 
+1.1 播放器界面
+└─views
+    ├─video
+    
+1.3 加入组件
+ ├─main.js
+ ```
+  import VueVideoPlayer from 'vue-video-player'
+  import 'video.js/dist/video-js.css'
+
+  Vue.use(VueVideoPlayer, /* {
+    options: global default options,
+    events: global videojs events
+  } */)
+ ```

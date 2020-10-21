@@ -70,6 +70,22 @@ export const constantRoutes = [
       }
     ]
   },
+  
+  {
+    path: '/video',
+    component: Layout,
+    redirect: '/video/index',
+    name: '定时器管理',
+    meta: { title: '定时器管理', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'job',
+        name: 'Index',
+        component: () => import('@/views/video/index'),
+        meta: { title: '播放器', icon: 'el-icon-video-camera-solid' }
+      }
+    ]
+  },
   // {
   //   path: '/example',
   //   component: Layout,
@@ -188,7 +204,7 @@ const createRouter = () => new Router({
 const router = createRouter()
 
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
-export function resetRouter() {
+export function resetRouter () {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // reset router
 }

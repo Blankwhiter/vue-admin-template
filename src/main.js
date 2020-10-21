@@ -15,6 +15,18 @@ import router from './router'
 import '@/icons' // icon
 import '@/permission' // permission control
 import 'element-ui/lib/theme-chalk/index.css' //chalk
+
+//-----vue-video-player 开始------//
+import VueVideoPlayer from 'vue-video-player'
+import 'video.js/dist/video-js.css'
+
+
+Vue.use(VueVideoPlayer, /* {
+  options: global default options,
+  events: global videojs events
+} */)
+//-----vue-video-player 结束------//
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
